@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/18 10:19:46 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/18 10:24:58 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/18 10:32:09 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int		*ft_range(int min, int max);
 
 int		main(void)
 {
-	int	min = 0;
-	int	max = 10000;
+	int	min = -100;
+	int	max = 400;
 	int i = 0;
 	int *range;
 
