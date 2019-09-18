@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/18 14:23:49 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/18 15:47:34 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/18 16:07:45 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,9 @@ int		ft_wordcount(char *str)
 		if ((str[i] == 32 || (str[i] >= 9 && str[i] <= 13) || i == 0) && str[i] != '\0')
 		{
 			fs = i;
-			fe = ft_wordlength(&str[fs + 1]);
+			if (i != 0)
+				fs++;
+			fe = ft_wordlength(&str[fs]);
 			if (fe > 1)
 				count++;
 		}
@@ -93,7 +95,7 @@ char	**ft_split_whitespaces(char *str)
 			fe = ft_wordlength(&str[fs]);
 			if (fe > 1)
 			{
-				res[pos] = ft_strdup(&str[fs], fe + 1);
+				res[pos] = ft_strdup(&str[fs], fe);
 				pos++;
 			}
 		}
