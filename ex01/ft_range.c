@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/18 10:15:36 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/18 14:20:41 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/19 08:57:19 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ int		*ft_range(int min, int max)
 
 	length = max - min;
 	if (length < 1)
+	{
+		range = 0;
 		return (range);
+	}
 	range = (int*)malloc(sizeof(range) * length);
 	i = 0;
 	while (i < length)
