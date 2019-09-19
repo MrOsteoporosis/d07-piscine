@@ -6,12 +6,11 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/18 14:23:49 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/19 09:31:01 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/19 09:41:59 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 int		ft_wordlength(char *str)
 {
