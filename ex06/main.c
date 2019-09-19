@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/19 11:16:29 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/19 12:11:05 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/19 12:46:48 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
 
 int		main(void)
 {
-	char *nbr = "90";
+	char *nbr = "-90ABC";
 	char *base_from = "0123456789ABCDEF";
 	char *base_to = "0123456789";
 

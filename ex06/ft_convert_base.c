@@ -6,7 +6,7 @@
 /*   By: averheij <averheij@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/09/19 10:39:50 by averheij       #+#    #+#                */
-/*   Updated: 2019/09/19 12:11:15 by averheij      ########   odam.nl         */
+/*   Updated: 2019/09/19 12:46:07 by averheij      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int		ft_ressize(int nbr, int baseno)
 	int size;
 
 	size = 0;
-	while (nbr / baseno)
+	while (nbr)
 	{
 		size++;
 		nbr /= baseno;
@@ -55,6 +55,8 @@ void	ft_doconv(int nbr, char *base, char *res, int baseno)
 	int		i;
 
 	i = ft_ressize(nbr, baseno);
+	res[i] = '\0';
+	i--;
 	while (nbr)
 	{
 		res[i] = base[nbr % baseno];
